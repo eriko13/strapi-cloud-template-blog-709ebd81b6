@@ -1,7 +1,25 @@
 module.exports = [
   'strapi::logger',
   'strapi::errors',
-  'strapi::security',
+  {
+    name: "strapi::security",
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          "frame-src": [
+            "'self'",
+            "youtube.com",
+            "www.youtube.com",
+            "vimeo.com",
+            "*.vimeo.com",
+            "facebook.com",
+            "www.facebook.com",
+          ],
+        },
+      },
+    },
+  },
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
