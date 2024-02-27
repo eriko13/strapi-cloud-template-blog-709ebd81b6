@@ -70,7 +70,7 @@ export interface SharedV extends Schema.Component {
   };
   attributes: {
     Youtube: Attribute.JSON &
-      Attribute.CustomField<'plugin::video-field.video'>;
+    Attribute.CustomField<'plugin::video-field.video'>;
   };
 }
 
@@ -82,18 +82,7 @@ export interface SharedYoutube extends Schema.Component {
   };
   attributes: {
     Youtube: Attribute.JSON &
-      Attribute.CustomField<'plugin::video-field.video'>;
-  };
-}
-
-export interface YoutubeOembed extends Schema.Component {
-  collectionName: 'components_youtube_oembeds';
-  info: {
-    displayName: 'OEMBED';
-    icon: 'slideshow';
-  };
-  attributes: {
-    OEMBED: Attribute.Text & Attribute.CustomField<'plugin::oembed.oembed'>;
+    Attribute.CustomField<'plugin::video-field.video'>;
   };
 }
 
@@ -105,7 +94,7 @@ export interface YoutubeYoutube extends Schema.Component {
   };
   attributes: {
     Youtube: Attribute.JSON &
-      Attribute.CustomField<'plugin::video-field.video'>;
+    Attribute.CustomField<'plugin::video-field.video'>;
   };
 }
 
