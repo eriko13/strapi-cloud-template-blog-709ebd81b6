@@ -108,7 +108,6 @@ declare module '@strapi/types' {
       'shared.slider': SharedSlider;
       'shared.v': SharedV;
       'shared.youtube': SharedYoutube;
-      'youtube.oembed': YoutubeOembed;
       'youtube.youtube': YoutubeYoutube;
     }
   }
