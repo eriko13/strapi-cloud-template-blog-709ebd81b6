@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_youtube_oembeds",
+  "info": {
+    "displayName": "OEMBED",
+    "icon": "slideshow"
+  },
+  "options": {},
+  "attributes": {
+    "OEMBED": {
+      "type": "customField",
+      "customField": "plugin::oembed.oembed"
+    }
+  }
+}

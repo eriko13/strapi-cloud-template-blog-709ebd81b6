@@ -62,6 +62,53 @@ export interface SharedSlider extends Schema.Component {
   };
 }
 
+export interface SharedV extends Schema.Component {
+  collectionName: 'components_shared_vs';
+  info: {
+    displayName: 'V';
+    icon: 'alien';
+  };
+  attributes: {
+    Youtube: Attribute.JSON &
+      Attribute.CustomField<'plugin::video-field.video'>;
+  };
+}
+
+export interface SharedYoutube extends Schema.Component {
+  collectionName: 'components_shared_youtubes';
+  info: {
+    displayName: 'Youtube';
+    icon: 'picture';
+  };
+  attributes: {
+    Youtube: Attribute.JSON &
+      Attribute.CustomField<'plugin::video-field.video'>;
+  };
+}
+
+export interface YoutubeOembed extends Schema.Component {
+  collectionName: 'components_youtube_oembeds';
+  info: {
+    displayName: 'OEMBED';
+    icon: 'slideshow';
+  };
+  attributes: {
+    OEMBED: Attribute.Text & Attribute.CustomField<'plugin::oembed.oembed'>;
+  };
+}
+
+export interface YoutubeYoutube extends Schema.Component {
+  collectionName: 'components_youtube_youtubes';
+  info: {
+    displayName: 'Youtube';
+    icon: 'picture';
+  };
+  attributes: {
+    Youtube: Attribute.JSON &
+      Attribute.CustomField<'plugin::video-field.video'>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -70,6 +117,10 @@ declare module '@strapi/types' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.v': SharedV;
+      'shared.youtube': SharedYoutube;
+      'youtube.oembed': YoutubeOembed;
+      'youtube.youtube': YoutubeYoutube;
     }
   }
 }

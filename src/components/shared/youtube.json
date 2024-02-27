@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_youtubes",
+  "info": {
+    "displayName": "Youtube",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "Youtube": {
+      "type": "customField",
+      "customField": "plugin::video-field.video"
+    }
+  }
+}

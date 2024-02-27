@@ -51,16 +51,9 @@
         "shared.media",
         "shared.quote",
         "shared.rich-text",
-        "shared.slider"
+        "shared.slider",
+        "shared.youtube"
       ]
-    },
-    "oembed": {
-      "type": "customField",
-      "customField": "plugin::oembed.oembed"
-    },
-    "video-field": {
-      "type": "customField",
-      "customField": "plugin::video-field.video-field"
     }
   }
 }
