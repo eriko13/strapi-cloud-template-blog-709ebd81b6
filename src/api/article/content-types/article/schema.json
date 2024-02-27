@@ -57,6 +57,10 @@
     "oembed": {
       "type": "customField",
       "customField": "plugin::oembed.oembed"
+    },
+    "video-field": {
+      "type": "customField",
+      "customField": "plugin::video-field.video-field"
     }
   }
 }
